@@ -1,0 +1,123 @@
+<!-- Contact -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Vi Strings! Reach out for inquiries about our beginner-friendly violin lessons or any questions you may have." />
+    <meta name="keywords" content="Vi Strings, Contact Us, Violin Lessons, Music Education, Beginner Violin, Inquiries, Support" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <title>Contact | Vi Srings</title>
+    
+</head>
+
+<header>
+  <div class = "navigation">
+    <nav>
+      <div class="mobile-tablet-nav" onclick="toggleNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="navigationBar" class="sidenav">
+          <div onclick="toggleNav(this)">x</div>
+
+          <div class="navs">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="lesson.html">Lesson</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <img src="images/logo.png" alt="vi strings logo" />
+
+      <div class="navs desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="lesson.html">Lesson</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body class = "bg1">
+    <main>
+      <div class="contact-intro">
+        <h2>Get in Touch with Us</h2>
+        <p>We'd love to hear from you! Whether you have questions about our violin lessons, need more information, or just want to say hello, feel free to reach out using the contact form below.</p>
+      </div>
+       
+      <div class="submission-form">
+        <form>
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"  required>
+          </div>
+          
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5"  required></textarea>
+          </div>
+          
+          <div class="button-group">
+              <input type="reset" value="RESET">
+              <input type="submit" value="SUBMIT">
+          </div>
+        </form>
+      </div>
+
+      <section class="follow">
+        <h2>Follow Us:</h2>
+          <div class = "social-med">
+            <div class = "contact-social-med">
+              <img alt="Instagram logo" height="60" src="images/ig_icon2.png" width="80"/>
+              <span>
+               @vi_stringsOfficial
+              </span>
+            </div>
+  
+            <div class = "contact-social-med">
+              <img alt="Facebook logo" height="60" src="images/fb_icon2.png" width="80"/>
+              <span>
+               Vi Strings Official
+              </span>
+            </div>
+          </div>
+  
+        <h2>Email Us Directly:</h2>
+        <p>For any inquiries or support, you can also email us at: <a href="mailto:vi_string@gmail.com">vi_string@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+        <p>Like and Follow our social medias:</p>
+        <div class = "socmed">
+            <!--FB-->
+            <img src="images/fb_icon.png" alt="FB Icon">
+            <a href = "#"><strong>Vi Strings Official</strong></a>
+            <!--IG--> 
+            <img src="images/ig_icon.png" alt="IG Icon">
+            <a href = "#"><strong>@vi_stringsOfficial</strong></a> 
+        </div>
+
+        <p>2024 ALL RIGHTS RESERVED | VI STRINGS | CREATED BY SHERENE TOLENTINO</p>
+    </footer>
+
+    <!--JAVASCRIPT CALL-->
+    <script src="Script.js"></script>
+
+
+</body>
+</html>

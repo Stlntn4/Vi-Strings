@@ -1,0 +1,1919 @@
+
+:root {
+    --brown1: #2E1402;
+    --brown2: #502B0F;
+    --brown3: #724A24;
+    --brown4: #946D43;
+    --brown5: #B7966B;
+    --brown6: #D9C19D;
+    --brown7: #FBEED7;
+}
+
+
+
+/* Hamburger Icon */
+.mobile-tablet-nav {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #FBEED7;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+/* END OF HAMBURGER ICON */
+
+/* Navigation Side Bar Menu */
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #502B0F;
+    overflow-x: hidden;
+    padding-top: 60px;     
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+/* 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} */
+  /* END OF SIDEBAR NAVIGATION */
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*STYLE RULES FOR ALL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body.bg1 {
+    background-color: var(--brown6);
+} 
+
+body.bg2 {
+    background-color: var(--brown2);
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--brown1);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
+
+header nav img {
+    width: 260px;
+}
+
+header nav .navs a{ /*navs*/
+    color: var(--brown7);
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 .5em;
+}
+
+.desktop-nav { /* to add space on the right side of CONTACT*/
+    padding-right: 4em;
+}
+
+
+header .hero img {
+    width: 50%;
+    height: 20%; /* for adjustment of the image size HERO */
+    margin-bottom: 1em;
+}
+
+.hero img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+} 
+
+main {
+    color: var(--brown1);
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+    margin: auto;
+    padding: 2em;
+    background-color: var(--brown4);
+    border-radius: 41px;
+}
+
+.intro img.intro_img {
+    width: 450px;
+    height: 350px;
+}
+
+.intro h2 {
+    color: var(--brown1);
+    font-size: 42px;
+    font-family: "Dela Gothic One", georgia;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.intro p {
+    color: var(--brown7);
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.intro .welcome {
+    padding-left: 1.5em;
+    padding-right: 2em;
+}
+
+.overview h3, main .cta h3 {
+    font-size: 36px;
+    color: var(--brown2);
+    font-family: "Dela Gothic One", georgia;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.overview p, .cta p {
+    padding: 1em 0;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.overview li {
+    padding: 0.2em 0;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+.overview p, .overview li, .cta p {
+    font-size: 30px;
+}
+
+.overview ul {
+    list-style-position: inside;
+    padding-left: 2em;
+}
+
+.overview, .cta {
+    margin: 2em 2.5em;
+}
+
+
+/*===== ABOUT US PAGE FOR ALL =====*/
+.about {
+    padding-top: 3em;
+}
+
+section.story h2, section.mission h2, section.choose h2 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+section.story p, section.mission p, section.choose p, section.choose ul {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+
+section.story { 
+    background-color: var(--brown3);
+    color: var(--brown7);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 2em 3em;
+    text-align: center;
+    padding: 1em;
+}
+
+section.mission {
+    background-color: var(--brown4);
+    color: var(--brown7);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 2em 3em;
+    text-align: center;
+    padding: 1em;
+}
+
+section.choose {
+    background-color: var(--brown5);
+    color: var(--brown1);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 2em 3em;
+    text-align: left;
+    padding: 1em;
+}
+
+section.choose ul li {
+    list-style-position: inside;
+    padding: 0.3em 0;
+}
+
+
+/*===== LESSON PAGE FOR ALL =====*/
+
+.navigation {
+    padding-bottom: 8em;
+}
+
+/* .container {
+    padding: 4em 5.5em 1em 6.5em; /* Padding for the nav 
+} */
+
+.container {
+    padding: 2em 3em 1em 3em;
+}
+
+/* Styling for h2 */
+.playing-violin h2 {
+    color: var(--brown1);
+    font-family: "Dela Gothic One", georgia;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+/* Adjusting h3 to not align with p and ul */
+.playing-violin h3, .parts h3, .note_read h3, .time_signature h3 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    color: var(--brown2);
+    margin-bottom: 0.2em; /* Adds spacing below h3 */
+    padding-left: 0.5em; /* No alignment with p or ul */
+    padding-top: 1em;
+}
+
+/* Styling for p */
+.playing-violin p, .parts p, .note_read p, .guide_table p, .time_signature p {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: var(--brown1);
+    margin-left: 1.5em; /* Aligned separately from ul */
+    margin-bottom: 0.2em;
+    padding-left: 0;
+}
+
+/* Styling for ul */
+.playing-violin ul, .parts ul, .note_read ul, .time_signature ul, .mobile-table {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: var(--brown1);
+    padding-left: 3em;
+    list-style-type: disc;
+    padding-bottom: 1em;
+    padding-top: .5em;
+}
+
+
+/* IMAGES FOR VIOLIN & BOW PARTS */
+.violin_parts {
+    width: 100%; /* Adjust the width of the image */
+    max-width: 600px; /* Set a maximum width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    
+    padding: 30px;
+}
+  
+.bow_parts {
+    width: 100%; /* Adjust the width of the image */
+    max-width: 600px; /* Set a maximum width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+   
+    padding: 30px;
+}
+
+/* IMAGES FOR STAFF, and GDAE */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the images */
+    align-items: center; /* Center images vertically */
+    text-align: center;
+}
+
+.strings_placement, .staff_treble  {
+    /* max-width: 45%; Set max width for left image */
+    margin-right: 10px; /* Add some space between images */
+    width: 600px;
+    height: 450px;
+    padding: 1em;
+}
+
+figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+/* TABLE FOR LESSON */
+
+/* Table 1 */
+.table1 {
+    width: 1030px;
+    height: 300px;
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures no gaps between table cells */
+    margin-bottom: 50px; /* Adds space below Table 3 */
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+
+.table1 th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #FBEED7; /* Text color */
+    border: 1px solid var(--brown2); /* Optional: Adds a border to table cells */
+}
+
+.table1 .up {
+    background-color: var(--brown1); /* Darker brown for header row */
+}
+
+.table1 .down {
+    background-color: var(--brown4); /* Lighter brown for the rest */
+}
+
+/* Optional: Adds hover effect on table rows */
+.table1 .down:hover {
+    background-color: var(--brown5);
+}
+
+/* Table 2 */
+.table2 {
+    width: 500px;
+    height: 430px;
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures no gaps between table cells */
+    margin-bottom: 50px; /* Adds space below Table 3 */
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+
+.table2 th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #FBEED7; /* Text color */
+    border: 1px solid var(--brown2); /* Optional: Adds a border to table cells */
+}
+
+.table2 .solf {
+    background-color: var(--brown1); /* Darker brown for header row */
+}
+
+.table2 .low {
+    background-color: var(--brown4); /* Lighter brown for the rest */
+}
+
+/* Optional: Adds hover effect on table rows */
+.table2 .low:hover {
+    background-color: var(--brown5);
+}
+
+/* Table 3 */
+.table3 {
+    width: 1100px;
+    height: 668px;
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures no gaps between table cells */
+    margin-bottom: 50px; /* Adds space below Table 3 */
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+
+.table3 th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #FBEED7; /* Text color */
+    border: 1px solid var(--brown1); /* Adds a border to table cells */
+}
+
+.table3 .dark {
+    background-color: var(--brown3); /* Darker brown for dark rows */
+}
+
+.table3 .light {
+    background-color: var(--brown4); /* Lighter brown for light rows */
+}
+
+/* Optional: Adds hover effect on table rows */
+.table3 .dark:hover, .light:hover {
+    background-color: #B7966B;
+}
+
+/* Table 4 */
+.table4 {
+    width: 1000px;
+    height: 314px;
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Ensures no gaps between table cells */
+    margin-bottom: 150px; /* Adds space below Table 4 */
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+
+.table4 th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: var(--brown7); /* Text color */
+    border: 1px solid var(--brown2); /* Optional: Adds a border to table cells */
+}
+
+.table4 .shadow {
+    background-color: var(--brown3); /* Background color for shadow rows */
+}
+
+.table4 .bright {
+    background-color: var(--brown4); /* Background color for bright rows */
+}
+
+/* Optional: Adds hover effect on table rows */
+.table4 .shadow:hover, .bright:hover {
+    background-color: var(--brown5); /* Optional hover effect */
+}
+
+/* Table for mobile */
+.mobile-table {     /* Hide the table converted to paragraph */
+    display: none;
+}
+
+.mobile-table {
+    font-family: "Inter", sans-serif;
+}
+
+
+/*===== RESOURCES PAGE FOR ALL =====*/
+
+/* Inline and hover effect for the PDF links */
+.pdf-list a {
+    text-decoration: none;
+    color: var(--brown2); /* Brown color for links */
+    font-weight: 800;
+    display: inline;
+}
+
+.pdf-list a:hover {
+    color: var(--brown3); /* Lighter Brown on hover */
+    text-decoration: underline;
+}
+
+section.resources {
+    color: var(--brown7);
+    font-size: 30px;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 5em 2em 2em 2em;
+}
+
+section.audio {
+    background: linear-gradient(var(--brown6), var(--brown5), var(--brown4));
+    color: var(--brown2);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 2em 3em;
+    text-align: left;
+    padding: 1em;
+}
+
+section.pdfs {
+    background: linear-gradient(var(--brown6), var(--brown5), var(--brown4));
+    color: var(--brown2);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 2em 3em;
+    text-align: left;
+    padding: 1em;
+}
+
+section.resources h2 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--brown6);
+}
+
+section.audio h2, section.pdfs h2 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--brown2);
+}
+
+section.resources p {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: var(--brown6);
+}
+
+section.audio p, section.pdfs p, section.audio ul, section.pdfs ul {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: var(--brown2);
+}
+
+section.pdfs ul li, section.audio ul li  {
+    list-style-position: inside;
+    padding: 0.3em 1em;
+}
+
+/* section.pdfs ul li {
+        list-style-position: inside;
+        padding: 0.3em 0;
+} */
+
+section.pdfs ul:first-of-type {
+    padding-bottom: 1em;
+}
+
+/* Center the video element */
+#video {
+    display: block;      /* Make the video a block element */
+    margin-left: auto;  /* Automatically set left margin */
+    margin-right: auto; /* Automatically set right margin */
+    height: 490px;      /* Maintain aspect ratio */
+    width: 860px;
+}
+
+
+/*===== CONTACT PAGE FOR ALL =====*/
+
+.contact-intro h2 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--brown2);
+    text-align: center;
+}
+
+.contact-intro p {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    padding: 2em;
+    text-align: center;
+}
+
+.submission-form form {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    
+            
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.submission-form {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--brown1);
+}
+input[type="text"], input[type="email"], textarea {
+    width: 650px;
+    padding: 20px;
+    border: none;
+    background-color: var(--brown5);
+}
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="submit"], input[type="reset"] {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--brown1);
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="reset"] {
+    background-color: var(--brown6);
+    color: var(--brown2);
+    width: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 25px;
+}
+input[type="submit"] {
+    background-color: var(--brown2);
+    color: var(--brown7);
+    width: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 25px;
+
+}
+
+section.follow {
+    background-color: var(--brown1);
+    color: var(--brown7);
+    padding: 2em;
+    border-radius: 40px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.contact-social-med {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.social-med {
+    display: flex;
+    flex-direction: column;
+}
+
+section.follow h2 {
+    font-family: "Dela Gothic One", georgia;
+    font-size: 42px;
+    font-weight: 200;
+}
+
+section.follow p a {
+    text-decoration: none;
+    color: var(--brown7);
+    font-weight: bold;
+}
+
+section.follow span {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+section.follow p:last-child {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+}
+/* ===== END OF CONTACT PAGE ===== */
+
+/* FOOTER */
+footer {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: var(--brown1);
+    font-family: "Inter", sans-serif;
+}
+
+footer .socmed img {
+    height: 70px;
+    width: 90px;
+}
+
+footer p {
+    font-size: 30px;
+    padding: 1em; /* Padding for spacing */
+    text-align: left;
+    color: var(--brown6);
+}
+
+footer p:last-child {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .socmed a {
+    font-size: 30px;
+    color: var(--brown6);
+}
+
+/*===============================================================*/
+/* DESKTOP VIEWPORT */
+@media screen and (min-width: 1280px) {
+    header nav {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: var(--brown1);
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        font-size: 36px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+
+    .mobile-tablet-nav {
+        display: none; /* Hide mobile navigation */
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+}
+
+/*===============================================================*/
+/* MOBILE VIEWPORT */
+@media screen and (max-width: 480px) {
+    /* Navigation Styles */
+    .mobile-tablet-nav {
+        display: block; /* Show mobile navigation */
+    }
+
+    .desktop-nav {
+        display: none; /* Hide desktop navigation */
+    }
+
+    .mobile-tablet-nav .navs a { /* Hamburger Navigation */
+        padding: 0.5em 1em;
+        font-weight: 500;
+    }
+
+    .navigation {
+        padding-bottom: 2em;
+    }
+
+    header nav img {
+        width: 4em;
+        max-width: 100%;
+        height: 2em;
+        margin: 1px auto;
+        padding-right: 75px;
+    }
+
+   
+    /* General Body Styles */
+    body {
+        font-size: 20px; /* Base font size for mobile */
+        width: 100%;    
+    }
+
+    /* Body for space*/
+    .container {
+        padding: .3em!important; /* 0em 1.5em 1em 1.5em */
+    }
+
+    /*===== HOME MOBILE =====*/
+
+    .hero img {
+        width: 100vw;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--brown4);
+        border-radius: 41px;
+        padding: 1em;
+    }
+
+    .intro .welcome p{
+        padding: 0;
+
+    }
+
+    .intro img.intro_img {
+        width: 265px;
+        height: 165px;
+    }
+    
+    .welcome h2 {
+        font-size: 25px;
+    }
+
+    .welcome p, .overview p, .cta p, .overview ul li {
+        font-size: 20px;
+    }
+
+    .overview h3, .cta h3 {
+        font-size: 20px;
+    }
+
+    .overview, .cta {
+        margin: 1em 1em;
+    }
+    
+
+    /*===== ABOUT MOBILE =====*/
+
+    .about {
+        padding-top: 3em;
+    }
+    
+    section.story h2, section.mission h2, section.choose h2 {
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+    
+    section.story p, section.mission p, section.choose p, section.choose ul {
+        font-size: 20px;
+    }
+    
+    section.story { 
+        background-color: var(--brown3);
+        color: var(--brown7);
+        line-height: 1em;
+        margin: 0.5em 1em;
+        text-align: center;
+        padding: 0.8em;
+    }
+    
+    section.mission {
+        background-color: var(--brown4);
+        color: var(--brown7);
+        line-height: 1em;
+        margin: 1em 1em;
+        text-align: center;
+        padding: 0.8em;
+    }
+    
+    section.choose {
+        background-color: var(--brown5);
+        color: var(--brown1);
+        line-height: 1em;
+        margin: 1em 1em;
+        text-align: left;
+        padding: 0.7em;
+    }
+
+    /*===== LESSON MOBILE =====*/
+
+    /* Image Styles */
+    .violin_parts, .bow_parts, .staff_treble, .strings_placement {
+        display: none;
+    }
+    
+    /* Table Styles */
+    .table1, .table2, .table3, .table4 {
+        display: none; /* Hide tables on mobile */
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    /* Mobile Table Styles */
+    .mobile-table {
+        display: block; /* Show mobile table */
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        color: var(--brown2);
+        padding-left: 0.5em;
+    }
+    
+    .playing-violin h2 {
+        font-size: 35px; /* Adjusted for mobile */
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .welcome h2 {
+        font-size: 25px; /* Adjusted for mobile */
+        
+    }
+
+    .playing-violin h3, .parts h3, .note_read h3, .time_signature h3, .mobile-table h3, .intro h3, .overview h3, .cta h3{
+        font-size: 25px; /* Adjusted for mobile */
+        text-align: left;
+        padding-bottom: .5em;
+    }
+
+    .playing-violin p, .parts p, .note_read p, .guide_table p, .time_signature p {
+        font-size: 20px; /* Adjusted for mobile */
+        margin-left: 10px; /* Adjusted margin */
+    }
+
+    .playing-violin ul, .parts ul, .note_read ul, .time_signature ul, .mobile-table ul {
+        font-size: 20px; /* Adjusted for mobile */
+        padding-left: 2em; /* Indentation for lists */
+        padding-bottom: .5em;
+    }
+
+    .playing-violin, .parts, .note_read, .guide_table, .time_signature, .mobile-table  {      
+        margin: 5px;
+        padding: 5px 10px;
+
+    }
+
+
+    /*===== RESOURCES MOBILE =====*/
+
+    section.resources {
+        font-size: 30px;
+        line-height: 1em;
+        text-align: center;
+        padding: 2em 1em 1em 1em;
+    }
+    
+    section.audio {
+        font-size: 30px;
+        line-height: 35px; /* 1.5em */
+        margin:1em;
+        text-align: left;
+        padding: 1em;
+    }
+    
+    section.pdfs {
+        font-size: 30px;
+        line-height: 35px; /* 1.5em */
+        margin: 1em;
+        text-align: left;
+        padding: 1em;
+    }
+    
+    section.resources h2 {
+        font-size: 25px;
+        font-weight: 500;
+        padding-bottom: 1em;
+    }
+    
+    section.audio h2, section.pdfs h2 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+    
+    section.resources p {
+        font-size: 20px;
+    }
+    
+    section.audio p, section.pdfs p, section.audio ul, section.pdfs ul {
+        font-size: 20px;
+    }
+    
+    section.pdfs ul li, section.audio ul li  {
+        list-style-position: inside;
+        padding: 0.3em 0;
+    }
+    
+    section.pdfs ul:first-of-type {
+        padding-bottom: 1em;
+    }
+
+    #video {
+        display: block;      /* Make the video a block element */
+        margin-left: auto;  /* Automatically set left margin */
+        margin-right: auto; /* Automatically set right margin */
+        height: 220px;      /* Maintain aspect ratio */
+        width: 300px;
+    }
+
+    /*===== CONTACT MOBILE =====*/
+
+    .contact-intro h2 {
+        font-family: "Dela Gothic One", georgia;
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--brown2);
+        text-align: center;
+        padding-top: 2em;
+    }
+    
+    .contact-intro p {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 2em;
+        text-align: center;
+    }
+    
+    .submission-form form {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+    
+    .submission-form {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .form-group label {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 5px;
+        color: var(--brown1);
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 250px;
+        padding: 15px;
+        border: none;
+        background-color: var(--brown5);
+    }
+    
+    
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid var(--brown1);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    input[type="reset"] {
+        background-color: var(--brown6);
+        color: var(--brown2);
+        width: 150px;
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 25px;
+    }
+    input[type="submit"] {
+        background-color: var(--brown2);
+        color: var(--brown7);
+        width: 200px;
+        font-size: 40px;
+        font-weight: 700;
+        border-radius: 25px;
+    
+    }
+    
+    section.follow {
+        background-color: var(--brown1);
+        color: var(--brown7);
+        padding: 1em;
+        border-radius: 40px;
+        width: 75%;
+        margin: 25px auto;
+    }
+    
+    .contact-social-med {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding: 15px;
+        width: 280px;
+        
+    }
+    
+    .social-med {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.follow h2 {
+        font-family: "Dela Gothic One", georgia;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    
+    section.follow p {
+        font-size: 18px;
+    }
+
+    section.follow p a {
+        text-decoration: none;
+        color: var(--brown7);
+        font-weight: bold;
+    }
+    
+    section.follow span {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+    
+    section.follow p:last-child {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    
+
+    /*===== FOOTER MOBILE =====*/
+
+     footer {
+        font-size: 16px; /* Adjusted footer font size */
+        text-align: center; /* Center footer text */
+        width: 100%;
+    }
+
+    footer .socmed img {
+        height: 40px; /* Adjust social media icons */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    footer .socmed a {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 16px; /* Adjusted footer paragraph size */
+        padding: 8px 0; /* Padding for spacing */
+    }
+
+    footer p:last-child {
+        font-size: 9px;
+    }
+}
+/* END FOR MOBILE */
+
+
+/*===============================================================*/
+/* TABLET VIEWPORT */
+@media screen and (min-width: 481px) and (max-width: 1280px) { /* 1366px */
+     /* Navigation Styles */
+     .mobile-tablet-nav {
+        display: block; /* Show mobile navigation */
+    }
+
+    .desktop-nav {
+        display: none; /* Hide desktop navigation */
+    }
+
+    .mobile-tablet-nav .navs a { /* Hamburger Navigation */
+        padding: 0.5em 1em;
+        font-weight: 500;
+    }
+
+    .navigation {
+        padding-bottom: 6em;
+    }
+
+    .mobile-tablet-nav .navs a { /* Hamburger Navigation */
+        padding: 0.5em 1em;
+        font-weight: 500;
+    }
+
+    header nav img {
+        width: 5em;
+        max-width: 100%; /* Responsive images */
+        height: 2.5em;
+        margin: 10px auto; /* Center images */
+        padding-right: 62px;
+    }
+
+    .container {
+        padding: 1em 0.5em 0.5em 1em;
+    }
+
+    /* ====== HOME PAGE FOR TABLET ===== */
+
+    .hero img {
+        width: 100vw; /*100vw*/
+        height: 20vh;
+        object-fit: cover;
+    }
+    
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 30%;
+        margin: auto;
+        padding: 2em;
+        background-color: var(--brown4);
+        border-radius: 41px;
+    }
+
+    .intro img.intro_img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .intro h2 {
+        font-size: 25px;
+    }
+
+    .intro p {   
+        font-size: 20px;
+    }
+
+    .intro .welcome {
+        padding-left: 1.5em;
+        padding-right: 2em;
+    }
+
+    .overview h3, main .cta h3 {
+        font-size: 25px;
+    }
+
+    .overview p, .cta p {
+        padding: 1em 0;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .overview li {
+        padding: 0.2em 0;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .overview p, .overview li, .cta p {
+        font-size: 20px;
+    }
+
+    .overview ul {
+        list-style-position: inside;
+        padding-left: 2em;
+    }
+
+    .overview, .cta {
+        margin: 2em 2.5em;
+    }
+
+   
+    /*===== ABOUT US PAGE FOR TABLET =====*/
+
+    .about {
+        padding-top: 1em;
+    }
+
+
+    section.story h2, section.mission h2, section.choose h2 {
+        font-size: 30px;
+    }
+
+    section.story p, section.mission p, section.choose p, section.choose ul {
+        font-size: 25px;
+    }
+
+    section.story { 
+        background-color: var(--brown3);
+        color: var(--brown7);
+        font-size: 30px;
+        line-height: 35px; /* 1.5em */
+        margin: 2em 3em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    section.mission {
+        background-color: var(--brown4);
+        color: var(--brown7);
+        line-height: 1.5em;
+        margin: 2em 3em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    section.choose {
+        background-color: var(--brown5);
+        color: var(--brown1);
+        line-height: 1.5em;
+        margin: 2em 3em;
+        text-align: left;
+        padding: 1em;
+    }
+
+    section.choose ul li {
+        list-style-position: inside;
+        padding: 0.3em 0;
+    }
+
+    /*===== LESSON PAGE FOR TABLET =====*/
+
+    /* Image Styles */
+    .violin_parts, .bow_parts, .staff_treble, .strings_placement {
+        display: none;
+    }
+
+    figcaption {
+        display: none;
+    }
+    
+    /* Table Styles */
+    .table1, .table2, .table3, .table4 {
+        display: none; /* Hide tables on mobile */
+    }
+
+    /* Mobile Table Styles */
+    .mobile-table {
+        display: block; /* Show mobile table */
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        color: var(--brown2);
+        padding-left: 0.5em;
+    }
+    
+    .playing-violin h2 {
+        font-size: 35px; /* Adjusted for mobile */
+        text-align: center;
+    }
+
+    .welcome h2 {
+        font-size: 25px; /* Adjusted for mobile */
+        
+    }
+
+    .playing-violin h3, .parts h3, .note_read h3, .time_signature h3, .mobile-table h3, .intro h3, .overview h3, .cta h3{
+        font-size: 25px; /* Adjusted for mobile */
+        text-align: left;
+        padding-bottom: .5em;
+    }
+
+    .playing-violin p, .parts p, .note_read p, .guide_table p, .time_signature p {
+        font-size: 20px; /* Adjusted for mobile */
+        margin-left: 10px; /* Adjusted margin */
+    }
+
+    .playing-violin ul, .parts ul, .note_read ul, .time_signature ul, .mobile-table ul {
+        font-size: 20px; /* Adjusted for mobile */
+        padding-left: 2em; /* Indentation for lists */
+        padding-bottom: .5em;
+    }
+
+    .playing-violin, .parts, .note_read, .guide_table, .time_signature, .mobile-table  {      
+        margin: 5px;
+        padding: 5px 10px;
+
+    }
+    
+    /*===== RESOURCES PAGE FOR TABLET =====*/
+
+    section.resources {
+        font-size: 30px;
+        line-height: 1em;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    section.audio {
+        font-size: 30px;
+        line-height: 35px; /* 1.5em */
+        margin:1em;
+        text-align: left;
+        padding: 1em;
+    }
+    
+    section.pdfs {
+        font-size: 30px;
+        line-height: 35px; /* 1.5em */
+        margin: 1em;
+        text-align: left;
+        padding: 1em;
+    }
+    
+    section.resources h2 {
+        font-size: 25px;
+        font-weight: 500;
+        padding-bottom: 1em;
+    }
+    
+    section.audio h2, section.pdfs h2 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+    
+    section.resources p {
+        font-size: 20px;
+    }
+    
+    section.audio p, section.pdfs p, section.audio ul, section.pdfs ul {
+        font-size: 20px;
+    }
+    
+    section.pdfs ul li, section.audio ul li  {
+        list-style-position: inside;
+        padding: 0.3em 0;
+    }
+    
+    section.pdfs ul:first-of-type {
+        padding-bottom: 1em;
+    }
+
+    #video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 520px;
+        width: 700px;
+    }
+
+
+    /*===== CONTACT FOR TABLET =====*/
+    .contact-intro {
+        padding-top: 2em;
+    }
+
+    .contact-intro h2 {
+        font-family: "Dela Gothic One", georgia;
+        font-size: 35px;
+        font-weight: 500;
+        color: var(--brown2);
+        text-align: center;
+    }
+    
+    .contact-intro p {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 2em;
+        text-align: center;
+    }
+    
+    .submission-form form {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 55vh;
+        margin: 0 auto;
+    }
+    
+    .submission-form {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .form-group label {
+        font-size: 25px;
+        display: block;
+        margin-bottom: 5px;
+        color: var(--brown1);
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 450px;
+        padding: 15px;
+        border: none;
+        background-color: var(--brown5);
+    }
+    
+    
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="submit"], input[type="reset"] {
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid var(--brown1);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    input[type="reset"] {
+        background-color: var(--brown6);
+        color: var(--brown2);
+        width: 150px;
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 25px;
+    }
+    input[type="submit"] {
+        background-color: var(--brown2);
+        color: var(--brown7);
+        width: 200px;
+        font-size: 40px;
+        font-weight: 700;
+        border-radius: 25px;
+    
+    }
+    
+    section.follow {
+        background-color: var(--brown1);
+        color: var(--brown7);
+        padding: 1em;
+        border-radius: 40px;
+        width: 75%;
+        margin: 25px auto;
+    }
+    
+    .contact-social-med {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding: 15px;
+        width: 580px;
+        
+    }
+    
+    .social-med {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.follow h2 {
+        font-family: "Dela Gothic One", georgia;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    
+    section.follow p {
+        font-size: 18px;
+    }
+
+    section.follow p a {
+        text-decoration: none;
+        color: var(--brown7);
+        font-weight: bold;
+    }
+    
+    section.follow span {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+    
+    section.follow p:last-child {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+
+    /*===== FOOTER FOR TABLET =====*/
+
+    footer {
+        font-size: 16px; /* Adjusted footer font size */
+        text-align: center; /* Center footer text */
+        width: 100%;
+    }
+
+    footer .socmed img {
+        height: 40px; /* Adjust social media icons */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    footer .socmed a {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 20px; /* Adjusted footer paragraph size */
+        padding: 10px 15px; /* Padding for spacing */
+        text-align: left;
+    }
+
+    footer p:last-child {
+        font-size: 15px;
+        text-align: center;
+    }    
+
+}
+
+/* =============================================================== */
+/* ===== PRINT QUERY ===== */
+@media print {
+    /* Hide images and videos */
+    img, video {
+        display: none !important;
+    }
+
+    /* Hide navigation and footer */
+    header, footer {
+        display: none !important; /* Ensure header and footer are not printed */
+    }
+
+    /* Adjust the display for tables */
+    .table1, .table2, .table3, .table4 {
+        width: 100%; /* Set tables to take full width */
+        font-size: 15px; /* Adjust font size for tables */
+        margin-bottom: 20px; /* Add spacing between tables */
+    }
+
+    /* Change font sizes for headings and paragraphs */
+    h2, h3 {
+        font-size: 15px !important; /* Set h2 and h3 font size to 25px */
+        color: black !important; /* Set color to black */
+    }
+
+    p, ul li {
+        font-size: 15px !important; /* Set paragraph and list item font size to 15px */
+        color: black !important; /* Set color to black */
+    }
+
+    /* Table text color */
+    th, td {
+        color: black !important; /* Set table header and cell text color to black */
+    }
+
+    /* Hide mobile navigation */
+    .mobile-tablet-nav {
+        display: none !important; /* Ensure mobile navigation is hidden */
+    }
+
+    /* Ensure desktop navigation is hidden */
+    .desktop-nav {
+        display: none !important; /* Hide desktop navigation */
+    }
+
+    /* Additional styling for better print layout */
+    body {
+        background: none; /* Remove background color */
+        color: black; /* Set text color to black for better readability */
+    }
+
+    /* Adjust margins and padding for print */
+    header, footer, .intro, .overview, .cta, .about, section {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove any unnecessary elements */
+    .sidenav, .button-group, .contact-social-med {
+        display: none !important; /* Hide unnecessary elements */
+    }
+
+    /* Adjust spacing for sections */
+    .intro, .overview, .cta, .about, section {
+        margin-bottom: 10px; /* Reduced spacing between sections */
+        padding: 5px; /* Reduced padding for better spacing */
+    }
+
+    /* Specific adjustments for About Us section */
+    section.story, section.mission, section.choose {
+        margin-bottom: 10px; /* Reduce margin for the About Us sections */
+        padding: 5px; /* Reduce padding for better spacing */
+    }
+
+    /* ===== HOME PAGE ===== */
+
+    .intro {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 100%; /* Set width to 100% for full alignment */
+        margin: 0; /* Remove margin to align with text below */
+        padding: 0; /* Remove padding for a flush layout */
+        background-color: var(--brown4);
+        border-radius: 41px; /* Keep the border radius if needed */
+    }
+    
+    .intro h2 {
+        color: var(--brown1);
+        font-size: 42px;
+        font-family: "Dela Gothic One", georgia;
+        font-weight: bold;
+        font-style: normal;
+        text-align: left; /* Align heading text to the left */
+        margin: 0; /* Remove any margin */
+    }
+    
+    .intro p {
+        color: var(--brown7);
+        font-size: 30px;
+        font-family: "Inter", sans-serif;
+        text-align: left; /* Align paragraph text to the left */
+        margin: 0; /* Remove any margin */
+        padding-bottom: 15px;
+    }
+    
+    .intro .welcome {
+        margin: 0; /* Remove any margin */
+        padding: 0; /* Remove padding for alignment */
+    }
+
+    /* ===== ABOUT PAGE ===== */
+
+    section.story, section.mission {
+        padding: 0;
+        margin: 0 2em;
+    }
+
+    .choose {
+        margin: 0 1em; /* Maintain margin above and below each section */
+        padding: 0; /* Remove padding for left alignment */
+        width: 80vw;
+        position: relative;
+        right: 1em;
+    }
+    
+    .about h2, .choose h2 {
+        font-size: 20px; /* Adjust font size for headings */
+        margin: 0; /* Remove default margin */
+    }
+    
+    .about p, .choose p {
+        font-size: 15px; /* Ensure font size is consistent */
+        color: var(--brown7); /* Keep text color consistent */
+        margin: 5px 0; /* Reduce space between paragraphs */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+    
+    .about ul, .choose ul {
+        list-style-type: disc; /* Use disc for list items */
+        padding-left: 1em; /* Maintain slight indentation */
+        margin: 10px 0; /* Add margin above and below the list */
+    }
+    
+    .about ul li, .choose ul li {
+        margin-bottom: 2px; /* Space between list items */
+        font-size: 15px; /* Ensure font size is consistent */
+        color: var(--brown7); /* Keep text color consistent */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    /* ===== LESSON PAGE ===== */
+    figcaption {
+        display: none;
+    }
+    .table3 {
+        margin-bottom: 5em;
+    }
+
+    /* ===== RESOURCES PAGE ===== */
+
+    section.resources, section.audio, section.pdfs {
+        font-size: 15px; /* Set font size for better readability */
+        line-height: 1.2; /* Reduce line height for compactness */
+        text-align: left; /* Align text to the left */
+        padding: 0; /* Remove padding */
+        margin: 0 1em; /* Remove margin */
+    }
+
+    section.resources {
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
+
+    section.resources h2, section.audio h2, section.pdfs h2 {
+        font-size: 20px; /* Set font size for headings */
+        margin: 0 1em; /* Remove margin */
+        padding-bottom: 5px; /* Reduce space below headings */
+    }
+
+    section.resources p, section.audio p, section.pdfs p {
+        font-size: 15px; /* Set font size for paragraphs */
+        margin: 0 1em; /* Reduce space between paragraphs */
+        line-height: 1.2; /* Adjust line height for better compactness */
+    }
+
+    section.resources ul, section.audio ul, section.pdfs ul {
+        padding-left: 0; 
+        margin: 0 1em; 
+        color: black;
+    }
+
+    section.resources ul li, section.audio ul li, section.pdfs ul li a {
+        margin: 1em; /* Reduce space between list items */
+        line-height: 1.2; /* Adjust line height for better readability */
+        color: black;
+        font-weight: normal;
+    }
+
+    /* Hide unnecessary elements */
+    header, footer, .sidenav, .mobile-tablet-nav {
+        display: none !important; /* Ensure these elements are not printed */
+    }
+
+
+    /* ===== CONTACT PAGE FOR PRINT ===== */
+    .submission-form {
+        display: none;
+    }
+
+    .contact-social-med span {
+        color: black;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+    }
+
+    .contact-social-med {
+        display: block;
+    }
+
+    .contact-social-med {
+        display: block !important; 
+    }
+
+    
+    section.follow h2 {
+        font-family: "Dela Gothic One", georgia;
+        font-size: 42px;
+        font-weight: 200;
+        color: black;
+    }
+
+    section.follow p a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    section.follow p {
+        color: black;
+    }
+
+    section.follow span {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    section.follow p:last-child {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+}

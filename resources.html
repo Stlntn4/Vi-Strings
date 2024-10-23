@@ -1,0 +1,118 @@
+<!-- Resources -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a variety of resources for beginner violinists at Vi Strings, including audio/video materials, sheet music, and downloadable guides to support your learning journey." />
+    <meta name="keywords" content="Vi Strings, Violin Resources, Beginner Violin, Audio Resources, Video Tutorials, Sheet Music, Practice Guides, Music Education" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <title>Resources | Vi Strings</title>
+    
+
+</head>
+
+    <header>
+        <div class = "navigation">
+            <nav>
+                <div class="mobile-tablet-nav" onclick="toggleNav(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div id="navigationBar" class="sidenav">
+                    <div onclick="toggleNav(this)">x</div>
+        
+                    <div class="navs">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="lesson.html">Lesson</a>
+                        <a href="resources.html">Resources</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                </div>
+        
+                <img src="images/logo.png" alt="vi strings logo" />
+        
+                <div class="navs desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="lesson.html">Lesson</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<body class = "bg2">
+
+    <main>
+        <section class = "resources">
+            <h2>Resources for Violin Beginners</h2>
+            <p>Welcome to the Resources page! Here, you'll find a variety of materials designed to support your learning journey as you start playing the violin. Whether you're looking for audio and video resources, sheet music, or downloadable guides, we've got you covered.</p>
+        </section>
+
+        <section class = "audio">
+            <h2>Audio and Video Resources</h2>
+            <p>Explore our collection of audio and video resources specifically tailored for beginners. These materials will help you understand violin techniques, practice scales, and follow along with lessons.</p>
+
+            <ul>
+                <li>Basic Tips</li>
+                <!-- VIDEO -->
+                <video controls poster = "#" id="video"> 
+                    <source src="medias/basic_tips.mp4" type="video/mp4">
+                    <source src="medias/basic_tips.webm" type="video/webm"> <!--WEB M-->
+                    <track src="medias/captions.vtt" kind="captions" srclang="en-us" label="English"> <!-- CAPTIONS -->
+                    <track src="medias/descriptions.vtt" kind="descriptions" srclang="en-us" label="English"> <!-- DESCRIPTIONS -->
+                    <p>Your browser does not support the video element.</p>
+                </video>
+                
+                <!-- <li>Guide for open string play</li>
+                <li>Beginner exercise violin play</li> -->
+            </ul>
+        </section>
+            
+
+        <section class = "pdfs">
+            <h2>Sheet Music for Practice</h2>
+            <p>Access the sheet music to practice essential piece and exercise. These selections are designed to help you develop your skills and build confidence in playing.</p>
+            <ul class="pdf-list">
+                <li><a href="files/violin_exercise.pdf" target="_blank">Exercises File</a></li> <!-- [Link to sheet music PDF]-->
+                <li><a href="files/grades1-5-scales.pdf" target="_blank">Scales File</a></li> <!-- [Link to sheet music PDF]-->
+                <li><a href="files/suzuki-violin-book1.pdf" target="_blank">Easy Violin Pieces File</a></li> <!-- [Link to sheet music PDF]-->
+            </ul>
+
+            <h2>PDFs and Downloadable Guides</h2>
+            <p>Downloadable helpful guides and PDFs that provide step-by-step instructions, tips, and additional practice resources. These documents are perfect for at home practice and reference. Just click the files below.</p>
+            <ul class="pdf-list">
+                <li><a href="files/violin_guide.pdf" target="_blank">Violin Basics Guide and Beginner's Practice Schedule</a></li> <!-- [Link to sheet music PDF]-->
+                <li><a href="files/violin_finger_positions.pdf" target="_blank">Fingering Charts of All Violin Positions</a></li> <!-- [Link to sheet music PDF]-->
+            </ul>
+            <p>Feel free to download and use these resources to enhance your learning experience. If you have any wuestions or need further assistance don't hesitate to reach out to us!</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Like and Follow our social medias:</p>
+        <div class = "socmed">
+            <!--FB-->
+            <img src="images/fb_icon.png" alt="FB Icon">
+            <a href = "#"><strong>Vi Strings Official</strong></a>
+            <!--IG--> 
+            <img src="images/ig_icon.png" alt="IG Icon">
+            <a href = "#"><strong>@vi_stringsOfficial</strong></a> 
+        </div>
+
+        <p>2024 ALL RIGHTS RESERVED | VI STRINGS | CREATED BY SHERENE TOLENTINO</p>
+    </footer>
+
+    <!--JAVASCRIPT CALL-->
+    <script src="Script.js"></script>
+    
+</body>
+</html>
